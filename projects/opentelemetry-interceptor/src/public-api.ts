@@ -1,4 +1,3 @@
-import { CustomSpan } from './lib/interceptor/custom-span.interface';
 /*
  * Public API Surface of opentelemetry-interceptor
  */
@@ -32,5 +31,8 @@ export {
   B3PropagatorConfig,
   InstrumentationConfig,
   OTELCOL_LOGGER,
-  CUSTOM_SPAN
+  CUSTOM_SPAN,
 } from './lib/configuration/opentelemetry-config';
+
+export { OtelWebTracerComponent } from './lib/component/otel-webtracer/otel-webtracer.component';
+export { InstrumentationService } from './lib/services/instrumentation/instrumentation.service';
